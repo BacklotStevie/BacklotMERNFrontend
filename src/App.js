@@ -8,10 +8,11 @@ import PodcastPage from './pages/PodcastPage/PodcastPage';
 import VideosPage from './pages/VideosPage/VideosPage';
 import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 import BacklotTeam from './pages/TeamPage/TeamPage';
+import Signup from './pages/Signup/adduser';
 import AdminPage from './pages/AdminPage/AdminPage';
 import Footer from '../src/components/Footer/footer';
 
-function App() {
+function App(props) {
   return (
     <div className="App">
       <Header />
@@ -21,6 +22,7 @@ function App() {
       <Route exact path="/videospage" render={(props) => <VideosPage {...props} />} />
       <Route exact path="/aboutus" render={(props) => <AboutUsPage {...props} />} />
       <Route exact path="/teampage" render={(props) => <BacklotTeam {...props} />} />
+      <Route exact path="/signup" render={(props) => <Signup {...props} />} />
       <Route exact path="/adminpage" render={(props) => <AdminPage {...props} />} />
       <Footer />
     </div>

@@ -45,7 +45,7 @@ const Adduser = () => {
                     <input className="col-12 m-2" type="text" name="firstname" value={username.firstname} placeholder="First Name" onChange={handleUserChange}></input>
                     <input className="col-12 m-2" type="text" name="lastname" value={username.lastname} placeholder="Last Name" onChange={handleUserChange}></input>
                     <input className="col-12 m-2" type="text" name="email" value={username.email} placeholder="Email" onChange={handleUserChange}></input>
-                    <input className="col-12 m-2" type="text" name="password" value={username.password} placeholder="Password" onChange={handleUserChange}></input>
+                    <input className="col-12 m-2" type="password" name="password" value={username.password} placeholder="Password" onChange={handleUserChange}></input>
 
 
                     <button type="submit">Submit</button>

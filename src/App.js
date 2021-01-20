@@ -9,6 +9,7 @@ import VideosPage from './pages/VideosPage/VideosPage';
 import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
 import BacklotTeam from './pages/TeamPage/TeamPage';
 import Signup from './pages/Signup/adduser';
+import LoginPage from './pages/LoginPage/LoginPage';
 import AdminPage from './pages/AdminPage/AdminPage';
 import Footer from '../src/components/Footer/footer';
 
@@ -23,6 +24,7 @@ function App(props) {
       <Route exact path="/aboutus" render={(props) => <AboutUsPage {...props} />} />
       <Route exact path="/teampage" render={(props) => <BacklotTeam {...props} />} />
       <Route exact path="/signup" render={(props) => <Signup {...props} />} />
+      <Route exact path="/login" render={(props) => <LoginPage {...props} />} />
       <Route exact path="/adminpage" render={(props) => <AdminPage {...props} />} />
       <Footer />
     </div>

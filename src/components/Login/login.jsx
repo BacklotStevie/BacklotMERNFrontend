@@ -22,7 +22,6 @@ const Login = () => {
     }
 
     function loginUserHandler(event) {
-        debugger
 
         event.preventDefault();
         axios.post(`${process.env.REACT_APP_API_BASE_URL}/users/login`, username)
@@ -36,10 +35,6 @@ const Login = () => {
                 console.log(error)
             })
     }
-
-
-
-
 
     return (
         <div className="container-fluid">

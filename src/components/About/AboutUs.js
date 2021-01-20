@@ -8,7 +8,7 @@ const AboutUs = () => {
             <div className="row">
                 <div className="jumbotron bg-medium col-12 mr-1 mt-5 mb-5">
                     <div className='col-3'>
-                        <img className="about-jumbo" src={Logo} />
+                        <img className="logo-jumbo" src={Logo} />
                     </div>
                     <div className='col-9'>
                         <h1 className="display-5 text-black">About Us</h1>

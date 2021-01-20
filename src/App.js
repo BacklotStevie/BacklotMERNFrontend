@@ -4,6 +4,7 @@ import './App.css'
 import Header from '../src/components/Header/header';
 import LandingPage from './pages/LandingPage/LandingPage';
 import ReviewPage from './pages/ReviewPage/ReviewPage';
+import IndividualReview from './components/IndividualReview/individualreview';
 import PodcastPage from './pages/PodcastPage/PodcastPage';
 import VideosPage from './pages/VideosPage/VideosPage';
 import AboutUsPage from './pages/AboutUsPage/AboutUsPage';
@@ -18,6 +19,7 @@ function App(props) {
     <div className="App">
       <Header />
       <Route exact path="/home" render={(props) => <LandingPage {...props} />} />
+      <Route exact path="/reviews/:id" render={(props) => <IndividualReview {...props} />} />
       <Route exact path="/reviews" render={(props) => <ReviewPage {...props} />} />
       <Route exact path="/podcastpage" render={(props) => <PodcastPage {...props} />} />
       <Route exact path="/videospage" render={(props) => <VideosPage {...props} />} />

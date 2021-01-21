@@ -4,6 +4,7 @@ import { userContext } from "../../context/UserCtx";
 import { useHistory } from 'react-router-dom'
 
 
+
 const Login = () => {
 
     const { setUser } = useContext(userContext);
@@ -29,7 +30,11 @@ const Login = () => {
                 console.log(res)
                 setUser(res.data.user);
                 localStorage.setItem("token", res.data.token);
-                history.push("/home");
+                {
+                    res.data.user.userType === "admin" ? (
+                        history.push("/adminpage")
+                    ) : history.push("/home");
+                }
             })
             .catch((error) => {
                 console.log(error)

@@ -38,7 +38,8 @@ const HomePage = () => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <h6 className="text-center"><a href='//linktr.ee/insidethebacklot/'>Listen Now</a></h6>
+                        <h6 className="text-center"><a href='https://open.spotify.com/episode/1DePsWGat43dXBHpJ6Lvlt?si=z6v6avJFSIuhZevjW-563A'>Listen On Spotify</a></h6>
+                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/disney-investor-day-mayhem/id1460214563?i=1000502128805'>Listen On Apple Podcasts</a></h6>
                     </Card.Footer>
                 </Card>
                 <Card className='podcast-card'>
@@ -46,11 +47,12 @@ const HomePage = () => {
                     <Card.Body className="card-body">
                         <Card.Title style={{ fontSize: "2rem" }}>Mando S2 Finale, Wolfwalkers & Sound of Metal</Card.Title>
                         <Card.Text className="podcast-text">
-                            Steven and John discuss <i>The Mandalorian's</i> season finale, as well as <i>Wolfwalkers</i> and <i>Sound of Metal.</i>
+                            Steven and John discuss <i>The Mandalorian's</i> season finale and some films of the week.
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <h6 className="text-center"><a href='//linktr.ee/insidethebacklot/'>Listen Now</a></h6>
+                        <h6 className="text-center"><a href='https://open.spotify.com/episode/0Uu87x0S4wH19QNyw9ssDO?si=WbkjyPxpQqSCJLQ78DEu2w'>Listen On Spotify</a></h6>
+                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/bonus-episode-mando-s2-finale-sound-of-metal-wolfwalkers/id1460214563?i=1000503467681'>Listen On Apple Podcasts</a></h6>
                     </Card.Footer>
                 </Card>
                 <Card className='podcast-card'>
@@ -62,7 +64,8 @@ const HomePage = () => {
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <h6 className="text-center"><a href='//linktr.ee/insidethebacklot/'>Listen Now</a></h6>
+                        <h6 className="text-center"><a href='https://open.spotify.com/episode/1DePsWGat43dXBHpJ6Lvlt?si=DvLbY-9KQ46QIx60FfIB8g'>Listen On Spotify</a></h6>
+                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/disney-investor-day-mayhem/id1460214563?i=1000502128805'>Listen On Apple Podcasts</a></h6>
                     </Card.Footer>
                 </Card>
             </CardDeck>

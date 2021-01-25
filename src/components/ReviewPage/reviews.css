@@ -14,9 +14,9 @@
   
 .story-info{
   width: 100%;
-  height: 7rem;
+  height: 9rem;
   margin-top: 1rem;
-  box-shadow: 4px 30px 13px 6px rgb(117, 116, 116);
+  /* box-shadow: 4px 30px 13px 6px rgb(117, 116, 116); */
   }
   
 .story-info h1,
@@ -37,4 +37,4 @@
   text-shadow: 2px 2px black;
   font-weight: bold;
   }
-  
+    

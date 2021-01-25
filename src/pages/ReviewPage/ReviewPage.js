@@ -10,7 +10,9 @@ const ReviewPage = (props) => {
                     <button className="divider-button bg-dark" disabled></button>
                     <h1 className="pt-3">Backlot Reviews</h1>
                 </div>
-                <ReviewsList />
+                <div className="container w-10">
+                    <ReviewsList />
+                </div>
 
                 <div className="container text-center pt-5">
                     <button className="divider-button bg-dark mt-4" disabled></button>

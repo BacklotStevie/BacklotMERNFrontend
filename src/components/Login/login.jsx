@@ -30,7 +30,11 @@ const Login = () => {
                 console.log(res)
                 setUser(res.data.user);
                 localStorage.setItem("token", res.data.token);
-                history.push("/home");
+                if (res.data.user.userType === "admin") {
+                    history.push("/adminpage")
+                } else {
+                    history.push("/home");
+                }
             })
             .catch((error) => {
                 console.log(error)

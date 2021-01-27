@@ -17,6 +17,9 @@ const Header = () => {
         history.push("/home");
     }
 
+    const signin = () => {
+    }
+
     return (
         <>
             <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className="mr-5 ml-5">
@@ -33,7 +36,7 @@ const Header = () => {
                         <Link to="/videospage"><Nav.Link className="nav-buttons mx-2" href="#videos">Videos</Nav.Link></Link>
                         <Link to="/teampage"><Nav.Link className="nav-buttons mx-2" href="#team">Team</Nav.Link></Link>
                         <Link to="/aboutus"><Nav.Link className="nav-buttons mx-2" href="#aboutus">About Us</Nav.Link></Link>
-                        {user ? <Link onClick={logout}><Nav.Link href="#signup">Log Out</Nav.Link></Link> : <Link to="/signup"><Nav.Link href="#signup">Sign Up</Nav.Link></Link>}
+                        {user ? <Link onClick={logout}><Nav.Link href="#signup">Log Out</Nav.Link></Link> : <Link onClick={signin} to="/signup"><Nav.Link href="#signup">Sign Up</Nav.Link></Link>}
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

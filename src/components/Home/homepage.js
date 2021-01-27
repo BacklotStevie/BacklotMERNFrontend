@@ -16,8 +16,8 @@ const HomePage = () => {
                         <img className="featured-jumbo" src="https://cnet2.cbsistatic.com/img/6hBpTES0Zkehs04k5kZkUQ7wdzM=/940x0/2021/01/13/12b59056-0831-4889-b7ff-1f0910bc1505/wandavision-disney-plus-marvel-ep16.jpg" />
                     </div>
                     <div className="col-4" >
-                        <h1 className="display-5 text-black mr-4 mb-4">WandaVision Episodes 1 & 2</h1>
-                        <p className="lead text-black mr-4 mb-5">Marvel Phase 4 is finally here! Steven and John discuss the much-anticipated first entry in the MCU since July 2019.<br /><a href='https://podcasts.apple.com/us/podcast/disney-investor-day-mayhem/id1460214563?i=1000502128805'>Listen on Apple Podcasts</a><br /><a href='https://open.spotify.com/episode/1DePsWGat43dXBHpJ6Lvlt?si=0fH73pHKS7GRMLWKVCEnDw'>Listen on Spotify</a></p>
+                        <h1 className="display-5 text-black mr-4 mb-4">Backlot's Top 10 Films of 2020</h1>
+                        <p className="lead text-black mr-4 mb-5">It's finally here! Steven and John discuss their top 10 films of 2020.<br /><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563#episodeGuid=insidethebacklot.podbean.com%2F52e637f7-0b50-3cae-89e3-0f3d23bb5a80'>Listen on Apple Podcasts</a><br /><a href='https://open.spotify.com/episode/57F8QBetc1z6fYKd6eRVkE?si=1B1tMqJaT-2B1Hb1cyscDw'>Listen on Spotify</a></p>
                     </div>
                 </div>
             </div>
@@ -29,6 +29,19 @@ const HomePage = () => {
             <h3 className="text-center sections">PODCASTS</h3>
 
             <CardDeck className="podcasts pb-5">
+                <Card className='podcast-card'>
+                    <Card.Img variant="top" src="https://www.rollingstone.com/wp-content/uploads/2020/12/RS-EndofYearLists_2020_MOVIES.jpg" />
+                    <Card.Body className="card-body">
+                        <Card.Title style={{ fontSize: "2rem" }}>Top 10 Films of 2020</Card.Title>
+                        <Card.Text className="podcast-text">
+                            Steven and John discuss their top 10 films of 2020.
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <h6 className="text-center"><a href='https://open.spotify.com/episode/1DePsWGat43dXBHpJ6Lvlt?si=z6v6avJFSIuhZevjW-563A'>Listen On Spotify</a></h6>
+                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/disney-investor-day-mayhem/id1460214563?i=1000502128805'>Listen On Apple Podcasts</a></h6>
+                    </Card.Footer>
+                </Card>
                 <Card className='podcast-card'>
                     <Card.Img variant="top" src="https://cnet2.cbsistatic.com/img/6hBpTES0Zkehs04k5kZkUQ7wdzM=/940x0/2021/01/13/12b59056-0831-4889-b7ff-1f0910bc1505/wandavision-disney-plus-marvel-ep16.jpg" />
                     <Card.Body className="card-body">
@@ -53,19 +66,6 @@ const HomePage = () => {
                     <Card.Footer>
                         <h6 className="text-center"><a href='https://open.spotify.com/episode/0Uu87x0S4wH19QNyw9ssDO?si=WbkjyPxpQqSCJLQ78DEu2w'>Listen On Spotify</a></h6>
                         <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/bonus-episode-mando-s2-finale-sound-of-metal-wolfwalkers/id1460214563?i=1000503467681'>Listen On Apple Podcasts</a></h6>
-                    </Card.Footer>
-                </Card>
-                <Card className='podcast-card'>
-                    <Card.Img variant="top" src={Disney} />
-                    <Card.Body className="card-body">
-                        <Card.Title style={{ fontSize: "2rem" }}>Disney Investor Day Madness</Card.Title>
-                        <Card.Text className="podcast-text">
-                            Steven and John convene to dicuss (mostly) everything announced at Disney Investor Day
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <h6 className="text-center"><a href='https://open.spotify.com/episode/1DePsWGat43dXBHpJ6Lvlt?si=DvLbY-9KQ46QIx60FfIB8g'>Listen On Spotify</a></h6>
-                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/disney-investor-day-mayhem/id1460214563?i=1000502128805'>Listen On Apple Podcasts</a></h6>
                     </Card.Footer>
                 </Card>
             </CardDeck>

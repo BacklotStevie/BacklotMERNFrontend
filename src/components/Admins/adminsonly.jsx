@@ -13,12 +13,12 @@ const AdminsOnly = () => {
         <>
             <div className='container'>
                 <div className='row'>
-                    <div className="text-center">
+                    <div className="col-2">
                         {/* <Link to={`/reviews/edit/${individual._id}`}><button className="m-3">Edit</button></Link>
                             <button onClick={handleOnClick}>Delete</button> */}
                         <Link to={'/addReview'}><button className="m-3">Add</button></Link>
                     </div>
-                    <div>
+                    <div className='col-10'>
                         <ReviewsList />
                     </div>
                 </div>

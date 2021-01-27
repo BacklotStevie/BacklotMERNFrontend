@@ -21,8 +21,11 @@ const ReviewsList = () => {
         return reviews && reviews.map(review => {
             return (
                 <tr>
-                    <th>{review.title}</th>
-                    <th>{review.writer}</th>
+                    <td>{review.title}</td>
+                    <td>{review.writer}</td>
+                    <td>
+                        <Link to={`/editReview/${review._id}`}><a href='#'>Edit</a></Link> | <a href='#' onClick={() => { }}>Delete</a>
+                    </td>
                 </tr>
             )
         })
@@ -35,8 +38,8 @@ const ReviewsList = () => {
             <table className='table'>
                 <thead className='thead-light'>
                     <tr>
-                        <th>Title</th>
-                        <th>Writer</th>
+                        <td>Title</td>
+                        <td>Writer</td>
                     </tr>
                 </thead>
                 <tbody>

@@ -62,20 +62,22 @@ function EditReview(props) {
     }
 
     return (
-        <form onSubmit={editReviewHandler}>
-            <input type="text" name="title" value={article.title} placeholder="title" onChange={handleArticleChange}></input>
-            <input type="text" name="writer" value={article.writer} placeholder="writer" onChange={handleArticleChange}></input>
+        <div className="container-fluid">
+            <form onSubmit={editReviewHandler} className="max-auto m-5">
+                <input className="col-12 m-2" type="text" name="title" value={article.title} placeholder="title" onChange={handleArticleChange}></input>
+                <input className="col-12 m-2" type="text" name="writer" value={article.writer} placeholder="writer" onChange={handleArticleChange}></input>
 
-            {reviews.map((review, index) =>
-                <>
-                    <input type="text" name="heading" value={review.heading} placeholder="headings" onChange={(e) => handleReviewChange(e, index)}></input>
-                    <input type="text" name="info" value={review.info} placeholder="body text" onChange={(e) => handleReviewChange(e, index)}></input>
-                </>
-            )}
+                {reviews.map((review, index) =>
+                    <>
+                        <input className="col-12 m-2" type="text" name="heading" value={review.heading} placeholder="headings" onChange={(e) => handleReviewChange(e, index)}></input>
+                        <input className="col-12 m-2" type="text" name="info" value={review.info} placeholder="body text" onChange={(e) => handleReviewChange(e, index)}></input>
+                    </>
+                )}
 
-            <input type="text" name="img" value={article.img} placeholder="images" onChange={handleArticleChange}></input>
-            <button type="submit">Submit</button>
-        </form>
+                <input className="col-12 m-2" type="text" name="img" value={article.img} placeholder="images" onChange={handleArticleChange}></input>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     )
 }
 

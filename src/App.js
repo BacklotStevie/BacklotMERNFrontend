@@ -13,7 +13,7 @@ import BacklotTeam from './pages/TeamPage/TeamPage';
 import Signup from './pages/Signup/adduser';
 import LoginPage from './pages/LoginPage/LoginPage';
 import AdminPage from './pages/AdminPage/AdminPage';
-import EditReviewPage from './pages/EditReviewPage/EditReviewPage';
+import EditReview from './components/EditReview/EditReview';
 import Footer from '../src/components/Footer/footer';
 
 function App(props) {
@@ -23,7 +23,7 @@ function App(props) {
       <Route exact path="/home" render={(props) => <LandingPage {...props} />} />
       <Route exact path="/reviews/:id" render={(props) => <IndividualReview {...props} />} />
       <Route exact path="/addReview" render={(props) => <AddReview  {...props} />} />
-      <Route exact path="/editReview" render={(props) => <EditReviewPage  {...props} />} />
+      <Route exact path="/reviews/editReview/:id" render={(props) => <EditReview  {...props} />} />
       <Route exact path="/reviews" render={(props) => <ReviewPage {...props} />} />
       <Route exact path="/podcastpage" render={(props) => <PodcastPage {...props} />} />
       <Route exact path="/videospage" render={(props) => <VideosPage {...props} />} />

@@ -15,7 +15,7 @@ const AdminsOnly = () => {
                 <div className='row'>
                     <div className="col-2">
                         {/* <Link to={`/reviews/edit/${individual._id}`}><button className="m-3">Edit</button></Link>
-                            <button onClick={handleOnClick}>Delete</button> */}
+                        <button onClick={handleOnClick}>Delete</button> */}
                         <Link to={'/addReview'}><button className="m-3">Add</button></Link>
                     </div>
                     <div className='col-10'>

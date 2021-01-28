@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './EditReview.css'
+import { useHistory } from 'react-router-dom';
+
 
 function EditReview(props) {
     const [article, setArticle] = useState({
@@ -8,6 +10,8 @@ function EditReview(props) {
         writer: "",
         img: "",
     })
+
+    const history = useHistory()
 
     const [reviews, setReviews] = useState([{
         heading: "",
@@ -52,13 +56,14 @@ function EditReview(props) {
 
 
         event.preventDefault();
-        axios.put(`${process.env.REACT_APP_API_BASE_URL}/reviews/${props.match.params.id}`, combined)
+        axios.put(`${process.env.REACT_APP_API_BASE_URL}/reviews/update/${props.match.params.id}`, combined)
             .then((res) => {
                 console.log(res)
             })
             .catch((error) => {
                 console.log(error)
             })
+        history.push("/reviews")
     }
 
     return (

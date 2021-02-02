@@ -66,6 +66,17 @@ function EditReview(props) {
         history.push("/reviews")
     }
 
+    const handleOnClick = () => {
+        axios.delete(`${process.env.REACT_APP_API_BASE_URL}/reviews/${props.match.params.id}`)
+            .then((res) => {
+                console.log(res)
+                history.push("/reviews")
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+    }
+
     return (
         <div className="container-fluid">
             <form onSubmit={editReviewHandler} className="max-auto m-5">
@@ -81,6 +92,7 @@ function EditReview(props) {
 
                 <input className="col-12 m-2" type="text" name="img" value={article.img} placeholder="images" onChange={handleArticleChange}></input>
                 <button type="submit">Submit</button>
+                <button onClick={handleOnClick}>Delete</button>
             </form>
         </div>
     )

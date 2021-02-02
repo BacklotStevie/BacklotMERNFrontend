@@ -53,6 +53,9 @@ const IndividualReview = (props) => {
                         </>
                     )}
                 </div>
+                <div className="tags">
+                    <h6>{individual.tags.map((tag) => ` #${tag}`)}</h6>
+                </div>
                 <div>
                     {/* <ShowButtons />
                     {user.userType === "admin" ? (

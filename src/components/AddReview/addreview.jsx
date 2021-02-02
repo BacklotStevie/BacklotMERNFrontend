@@ -6,6 +6,7 @@ function AddReview() {
         title: "",
         writer: "",
         img: "",
+        tags: "",
     })
 
     const [reviews, setReviews] = useState([{
@@ -69,6 +70,7 @@ function AddReview() {
             <form onClick={addReviewHandler} className="max-auto m-5">
                 <input className="col-12 m-2" type="text" name="title" value={article.title} placeholder="title" onChange={handleArticleChange}></input>
                 <input className="col-12 m-2" type="text" name="writer" value={article.writer} placeholder="writer" onChange={handleArticleChange}></input>
+                <input className="col-12 m-2" type="text" name="tags" value={article.tags} placeholder="tags" onChange={(e) => setArticle({ ...article, tags: e.target.value.split(",") })}></input>
 
                 {reviews.map((review, index) => <>
                     <input className="col-12 m-2" type="text" name="heading" value={reviews.heading} placeholder="headings" onChange={(e) => handleReviewChange(e, index)}></input>

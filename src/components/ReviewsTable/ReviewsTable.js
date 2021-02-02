@@ -24,7 +24,7 @@ const ReviewsList = () => {
                     <td>{review.title}</td>
                     <td>{review.writer}</td>
                     <td>
-                        <Link to={`/editReview/review._id`}><a href='#'>Edit</a></Link> | <a href='#' onClick={() => { }}>Delete</a>
+                        <Link to={`/reviews/editReview/${review._id}`}><a href='#'>Edit</a></Link> | <a href='#' onClick={() => { }}>Delete</a>
                     </td>
                 </tr>
             )

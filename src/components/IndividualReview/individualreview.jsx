@@ -33,26 +33,6 @@ const IndividualReview = (props) => {
             })
     }
 
-    const ShowButtons = () => {
-        if (user.userType === "admin") {
-            return (
-                <div className="text-center">
-                    <Link to={`/reviews/editReview/${individual._id}`}><button className="m-3">Edit</button></Link>
-                    <button onClick={handleOnClick}>Delete</button>
-                    <Link to={'/reviews/addreview'}><button className="m-3">Add</button></Link>
-                </div>
-            )
-        } else if (user.userType === null) {
-            return (
-                <div className="text-center d-none">
-                    <Link to={`/reviews/editReview/${individual._id}`}><button className="m-3">Edit</button></Link>
-                    <button onClick={handleOnClick}>Delete</button>
-                    <Link to={'/reviews/addreview'}><button className="m-3">Add</button></Link>
-                </div>
-            )
-        }
-    }
-
     console.log(user)
     const ShowIndividual = () => {
 
@@ -74,14 +54,14 @@ const IndividualReview = (props) => {
                     )}
                 </div>
                 <div>
-                    {/* <ShowButtons /> */}
+                    {/* <ShowButtons />
                     {user.userType === "admin" ? (
                         <div className="text-center">
-                            <Link to={`/reviews/edit/${individual._id}`}><button className="m-3">Edit</button></Link>
+                            <Link to={`/reviews/editReview/${individual._id}`}><button className="m-3">Edit</button></Link>
                             <button onClick={handleOnClick}>Delete</button>
                             <Link to={'/reviews/addreview'}><button className="m-3">Add</button></Link>
                         </div>
-                    ) : null}
+                    ) : null} */}
                 </div>
             </div>
         )

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function AddReview() {
@@ -9,12 +9,9 @@ function AddReview() {
         tags: "",
     })
 
-    const [reviews, setReviews] = useState([{
-        heading: "",
-        info: "",
-    }])
+    const [reviews, setReviews] = useState([{ heading1: " ", info1: " " }]);
 
-    const [counter, setCounter] = useState(1)
+    let [counter, setCounter] = useState(1)
 
     function handleArticleChange(event) {
         setArticle({
@@ -23,12 +20,16 @@ function AddReview() {
         })
     }
 
+
     function handleReviewChange(event, index) {
-        let reviewsCp = [...reviews];
-        let reviewCp = { ...reviews[index] }
-        reviewCp[event.target.name] = event.target.value
-        reviewsCp[index] = reviewCp
-        setReviews(reviewsCp)
+        event.preventDefault();
+        let reviewsCpy = [...reviews];
+        let review = reviewsCpy[index];
+        review = {
+            ...review,
+            [event.target.name]: event.target.value
+        }
+        setReviews(reviewsCpy);
     }
 
 
@@ -60,8 +61,10 @@ function AddReview() {
     }
     function addAnotherReview() {
         let reviewsCp = [...reviews];
-        reviewsCp[`heading${counter}`] = " "
-        reviewsCp[`info${counter}`] = " "
+        let newObj = {};
+        newObj[`heading${counter}`] = ""
+        newObj[`info${counter}`] = ""
+        reviewsCp.push(newObj)
         setReviews(reviewsCp)
         setCounter(counter++)
     }
@@ -71,20 +74,23 @@ function AddReview() {
     }
     return (
         <div className="container-fluid">
-            <form className="max-auto m-5">
+            <form onSubmit={addReviewHandler} className="max-auto m-5">
                 <input className="col-12 m-2" type="text" name="title" value={article.title} placeholder="title" onChange={handleArticleChange}></input>
                 <input className="col-12 m-2" type="text" name="writer" value={article.writer} placeholder="writer" onChange={handleArticleChange}></input>
                 <input className="col-12 m-2" type="text" name="tags" value={article.tags} placeholder="tags" onChange={(e) => setArticle({ ...article, tags: e.target.value.split(",") })}></input>
 
-                {reviews.map((review, index) => <div key={Math.random()}>
-                    <input className="col-12 m-2" type="text" name={`heading${counter}`} value={reviews.heading} placeholder="headings" onChange={(e) => handleReviewChange(e, index)}></input>
-                    <input className="col-12 m-2" type="text" name={`info${counter}`} value={reviews.info} placeholder="body text" onChange={(e) => handleReviewChange(e, index)}></input>
+                {reviews ? reviews.map((review, index) => <div key={Math.random()}>
+                    <input className="col-12 m-2" type="text" name={`heading${counter}`} value={reviews[index].heading} placeholder="headings" onChange={(e) => handleReviewChange(e, index)}></input>
+                    <textarea className="col-12 m-2" name={`info${counter}`} value={reviews[index].info} placeholder="body text" onChange={(e) => handleReviewChange(e, index)}></textarea>
                     <button>Remove</button>
-                </div>)}
+                </div>)
+                    :
+                    <></>
+                }
 
                 <button onClick={addAnotherReview}>Add Another Review</button>
                 <input className="col-12 m-2" type="text" name="img" value={article.img} placeholder="images" onChange={handleArticleChange}></input>
-                <button onSubmit={addReviewHandler}>Submit</button>
+                <button type="submit">Submit</button>
             </form>
         </div>
     )

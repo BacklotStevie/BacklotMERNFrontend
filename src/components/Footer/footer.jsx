@@ -44,17 +44,17 @@ const Footer = () => {
                 <div>
                     <form className="contact-form" method="post" action="contactform.php">
                         <div className="contact-firstname">
-                            <label for="name"></label>
+                            <label htmlFor="name"></label>
                             <input type="text" id="name" name="name" placeholder="Your name" required></input>
                         </div>
 
                         <div className="contact-email">
-                            <label for="email"></label>
+                            <label htmlFor="email"></label>
                             <input type="text" id="email" name="email" placeholder="Your email" required></input>
                         </div>
 
                         <div className="contact-subject">
-                            <label for="subject"></label>
+                            <label htmlFor="subject"></label>
                             <textarea type="text" name="subject" placeholder="Your message" required></textarea>
                         </div>
 

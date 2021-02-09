@@ -14,6 +14,8 @@ function AddReview() {
         info: "",
     }])
 
+    const [counter, setCounter] = useState(1)
+
     function handleArticleChange(event) {
         setArticle({
             ...article,
@@ -58,8 +60,10 @@ function AddReview() {
     }
     function addAnotherReview() {
         let reviewsCp = [...reviews];
-        reviewsCp.push({ heading: "", info: "" })
+        reviewsCp[`heading${counter}`] = " "
+        reviewsCp[`info${counter}`] = " "
         setReviews(reviewsCp)
+        setCounter(counter++)
     }
 
     function removeAReview(index) {
@@ -67,20 +71,20 @@ function AddReview() {
     }
     return (
         <div className="container-fluid">
-            <form onClick={addReviewHandler} className="max-auto m-5">
+            <form className="max-auto m-5">
                 <input className="col-12 m-2" type="text" name="title" value={article.title} placeholder="title" onChange={handleArticleChange}></input>
                 <input className="col-12 m-2" type="text" name="writer" value={article.writer} placeholder="writer" onChange={handleArticleChange}></input>
                 <input className="col-12 m-2" type="text" name="tags" value={article.tags} placeholder="tags" onChange={(e) => setArticle({ ...article, tags: e.target.value.split(",") })}></input>
 
-                {reviews.map((review, index) => <>
-                    <input className="col-12 m-2" type="text" name="heading" value={reviews.heading} placeholder="headings" onChange={(e) => handleReviewChange(e, index)}></input>
-                    <input className="col-12 m-2" type="text" name="info" value={reviews.info} placeholder="body text" onChange={(e) => handleReviewChange(e, index)}></input>
+                {reviews.map((review, index) => <div key={Math.random()}>
+                    <input className="col-12 m-2" type="text" name={`heading${counter}`} value={reviews.heading} placeholder="headings" onChange={(e) => handleReviewChange(e, index)}></input>
+                    <input className="col-12 m-2" type="text" name={`info${counter}`} value={reviews.info} placeholder="body text" onChange={(e) => handleReviewChange(e, index)}></input>
                     <button>Remove</button>
-                </>)}
+                </div>)}
 
                 <button onClick={addAnotherReview}>Add Another Review</button>
                 <input className="col-12 m-2" type="text" name="img" value={article.img} placeholder="images" onChange={handleArticleChange}></input>
-                <button type="submit">Submit</button>
+                <button onSubmit={addReviewHandler}>Submit</button>
             </form>
         </div>
     )

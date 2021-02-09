@@ -31,7 +31,7 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ml-auto text-right">
-                        <Link to="/reviews"><Nav.Link className="nav-buttons mx-2" href="#reviews">Film Reviews</Nav.Link></Link>
+                        <Link to="/reviews"><Nav.Link to="/reviews" className="nav-buttons mx-2" href="#reviews">Film Reviews</Nav.Link></Link>
                         <Link to="/podcastpage"><Nav.Link className="nav-buttons mx-2" href="#podcasts">Podcast</Nav.Link></Link>
                         <Link to="/videospage"><Nav.Link className="nav-buttons mx-2" href="#videos">Videos</Nav.Link></Link>
                         <Link to="/teampage"><Nav.Link className="nav-buttons mx-2" href="#team">Team</Nav.Link></Link>

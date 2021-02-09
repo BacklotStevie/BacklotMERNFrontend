@@ -16,7 +16,7 @@ const ReviewsList = (props) => {
             .catch(err => {
                 console.log(err)
             })
-    })
+    }, [])
 
     // const DeleteReview = (individualId) => {
     //     axios.delete(`${process.env.REACT_APP_API_BASE_URL}/reviews/`)
@@ -34,11 +34,11 @@ const ReviewsList = (props) => {
 
         return reviews && reviews.map(review => {
             return (
-                <tr>
+                <tr key={review._id}>
                     <td>{review.title}</td>
                     <td>{review.writer}</td>
                     <td>
-                        <Link to={`/reviews/editReview/${review._id}`}><a href='#'>Edit</a></Link> | <a href='#' onClick={() => { }}>Delete</a>
+                        <Link to={`/reviews/editReview/${review._id}`}>Edit</Link>
                     </td>
                 </tr>
             )

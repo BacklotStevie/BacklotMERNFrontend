@@ -16,7 +16,7 @@ const HomePage = () => {
                         <img className="featured-jumbo" src="https://cnet2.cbsistatic.com/img/6hBpTES0Zkehs04k5kZkUQ7wdzM=/940x0/2021/01/13/12b59056-0831-4889-b7ff-1f0910bc1505/wandavision-disney-plus-marvel-ep16.jpg" />
                     </div>
                     <div className="col-4" >
-                        <h1 className="display-5 text-black mr-4 mb-4">Backlot's Top 10 Films of 2020</h1>
+                        <h1 className="display-5 text-black mr-4 mb-4">WandaVision Episodes 5 & 6</h1>
                         <p className="lead text-black mr-4 mb-5">It's finally here! Steven and John discuss their top 10 films of 2020.<br /><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563#episodeGuid=insidethebacklot.podbean.com%2F52e637f7-0b50-3cae-89e3-0f3d23bb5a80'>Listen on Apple Podcasts</a><br /><a href='https://open.spotify.com/episode/57F8QBetc1z6fYKd6eRVkE?si=1B1tMqJaT-2B1Hb1cyscDw'>Listen on Spotify</a></p>
                     </div>
                 </div>

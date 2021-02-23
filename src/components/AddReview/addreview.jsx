@@ -20,7 +20,7 @@ function AddReview() {
 
 
     function handleReviewChange(event, index) {
-        event.preventDefault();
+        // event.preventDefault();
         // let reviewsCpy = [...reviews];
         // let review = reviewsCpy[index];
         // review = {
@@ -88,7 +88,7 @@ function AddReview() {
                 <input className="col-12 m-2" type="text" name="writer" value={article.writer} placeholder="writer" onChange={handleArticleChange}></input>
                 <input className="col-12 m-2" type="text" name="tags" value={article.tags} placeholder="tags" onChange={(e) => setArticle({ ...article, tags: e.target.value.split(",") })}></input>
 
-                {reviews ? reviews.map((review, index) => <div key={Math.random()}>
+                {reviews ? reviews.map((review, index) => <div key={index}>
                     <input className="col-12 m-2" type="text" name="heading" value={reviews[index].heading} placeholder="headings" onChange={(e) => handleReviewChange(e, index)}></input>
                     <textarea className="col-12 m-2" name="info" value={reviews[index].info} placeholder="body text" onChange={(e) => handleReviewChange(e, index)}></textarea>
                     <button>Remove</button>

@@ -25,10 +25,10 @@ function App(props) {
       <Route exact path="/addReview" render={(props) => <AddReview  {...props} />} />
       <Route exact path="/reviews/editReview/:id" render={(props) => <EditReview  {...props} />} />
       <Route exact path="/reviews" render={(props) => <ReviewPage {...props} />} />
-      <Route exact path="/podcastpage" render={(props) => <PodcastPage {...props} />} />
-      <Route exact path="/videospage" render={(props) => <VideosPage {...props} />} />
+      <Route exact path="/podcasts" render={(props) => <PodcastPage {...props} />} />
+      <Route exact path="/videos" render={(props) => <VideosPage {...props} />} />
       <Route exact path="/aboutus" render={(props) => <AboutUsPage {...props} />} />
-      <Route exact path="/teampage" render={(props) => <BacklotTeam {...props} />} />
+      <Route exact path="/team" render={(props) => <BacklotTeam {...props} />} />
       <Route exact path="/signup" render={(props) => <Signup {...props} />} />
       <Route exact path="/login" render={(props) => <LoginPage {...props} />} />
       <Route exact path="/adminpage" render={(props) => <AdminPage {...props} />} />

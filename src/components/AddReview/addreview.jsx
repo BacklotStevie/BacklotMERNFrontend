@@ -9,9 +9,7 @@ function AddReview() {
         tags: "",
     })
 
-    const [reviews, setReviews] = useState([{ heading1: " ", info1: " " }]);
-
-    let [counter, setCounter] = useState(1)
+    const [reviews, setReviews] = useState([{ heading: "", info: "" }]);
 
     function handleArticleChange(event) {
         setArticle({
@@ -23,13 +21,18 @@ function AddReview() {
 
     function handleReviewChange(event, index) {
         event.preventDefault();
-        let reviewsCpy = [...reviews];
-        let review = reviewsCpy[index];
-        review = {
-            ...review,
-            [event.target.name]: event.target.value
-        }
-        setReviews(reviewsCpy);
+        // let reviewsCpy = [...reviews];
+        // let review = reviewsCpy[index];
+        // review = {
+        //     ...review,
+        //     [event.target.name]: event.target.value
+        // }
+        // setReviews(reviewsCpy);
+        let reviewsCp = [...reviews];
+        let reviewCp = { ...reviews[index] }
+        reviewCp[event.target.name] = event.target.value
+        reviewsCp[index] = reviewCp
+        setReviews(reviewsCp)
     }
 
 
@@ -59,14 +62,20 @@ function AddReview() {
             });
 
     }
+    // function addAnotherReview() {
+    //     let reviewsCp = [...reviews];
+    //     let newObj = {};
+    //     newObj[`heading${counter}`] = ""
+    //     newObj[`info${counter}`] = ""
+    //     reviewsCp.push(newObj)
+    //     setReviews(reviewsCp)
+    //     setCounter(counter++)
+    // }
+
     function addAnotherReview() {
         let reviewsCp = [...reviews];
-        let newObj = {};
-        newObj[`heading${counter}`] = ""
-        newObj[`info${counter}`] = ""
-        reviewsCp.push(newObj)
+        reviewsCp.push({ heading: "", info: "" })
         setReviews(reviewsCp)
-        setCounter(counter++)
     }
 
     function removeAReview(index) {
@@ -80,8 +89,8 @@ function AddReview() {
                 <input className="col-12 m-2" type="text" name="tags" value={article.tags} placeholder="tags" onChange={(e) => setArticle({ ...article, tags: e.target.value.split(",") })}></input>
 
                 {reviews ? reviews.map((review, index) => <div key={Math.random()}>
-                    <input className="col-12 m-2" type="text" name={`heading${counter}`} value={reviews[index].heading} placeholder="headings" onChange={(e) => handleReviewChange(e, index)}></input>
-                    <textarea className="col-12 m-2" name={`info${counter}`} value={reviews[index].info} placeholder="body text" onChange={(e) => handleReviewChange(e, index)}></textarea>
+                    <input className="col-12 m-2" type="text" name="heading" value={reviews[index].heading} placeholder="headings" onChange={(e) => handleReviewChange(e, index)}></input>
+                    <textarea className="col-12 m-2" name="info" value={reviews[index].info} placeholder="body text" onChange={(e) => handleReviewChange(e, index)}></textarea>
                     <button>Remove</button>
                 </div>)
                     :

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { useHistory } from 'react-router-dom'
 
 function AddReview() {
     const [article, setArticle] = useState({
@@ -10,6 +11,8 @@ function AddReview() {
     })
 
     const [reviews, setReviews] = useState([{ heading: "", info: "" }]);
+
+    const history = useHistory
 
     function handleArticleChange(event) {
         setArticle({
@@ -55,7 +58,7 @@ function AddReview() {
         };
         axios(config)
             .then((response) => {
-
+                // history.push("/reviews")
             })
             .catch((error) => {
 

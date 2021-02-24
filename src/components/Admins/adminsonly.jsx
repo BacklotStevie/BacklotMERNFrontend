@@ -10,7 +10,7 @@ import ReviewsList from '../ReviewsTable/ReviewsTable.js';
 const AdminsOnly = () => {
     const { user } = useContext(userContext)
 
-    if (user.usertype === "normal") {
+    if (user.userType === "normal") {
         return (
             <div className="container">
                 <div className="row text-center">

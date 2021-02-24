@@ -8,6 +8,17 @@ import axios from 'axios';
 import ReviewsList from '../ReviewsTable/ReviewsTable.js';
 
 const AdminsOnly = () => {
+    const { user } = useContext(userContext)
+
+    if (user.usertype === "normal") {
+        return (
+            <div className="container">
+                <div className="row text-center">
+                    <h1>You are not authorized to view this page.</h1>
+                </div>
+            </div>
+        )
+    }
 
     return (
         <>

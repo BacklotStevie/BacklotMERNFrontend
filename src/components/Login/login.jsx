@@ -1,14 +1,14 @@
 import axios from 'axios';
 import { useState, useContext } from "react";
 import { userContext } from "../../context/UserCtx";
-import { useHistory } from 'react-router-dom'
-
+import { useHistory, useLocation } from 'react-router-dom'
 
 
 const Login = () => {
 
     const { setUser } = useContext(userContext);
     const history = useHistory()
+    const location = useLocation()
     const [username, setUsername] = useState({
         email: "",
         password: ""

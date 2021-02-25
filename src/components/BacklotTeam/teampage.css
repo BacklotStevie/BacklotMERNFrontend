@@ -3,7 +3,7 @@
   }
   
 .about-cards {
-    height: 65rem;
+    height: 98rem;
   }
   
 .socials-about {
@@ -19,3 +19,11 @@
     height: 25px;
     width: 25px;
   }
+
+.team {
+  margin: 2rem;
+}
+
+.team-card {
+  height: 45rem;
+}

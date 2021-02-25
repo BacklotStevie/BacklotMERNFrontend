@@ -13,8 +13,8 @@ const TeamPage = () => {
         <div className="container">
             <div className="row about-cards">
                 <div className="col-12 col-sm-6 mb-5 about-card">
-                    <CardDeck className="podcasts">
-                        <Card className='podcast-card'>
+                    <CardDeck className="team">
+                        <Card className='team-card'>
                             <Card.Img className='about-pics' width="100%" variant="top" src={Steven} />
                             <Card.Body className="">
                                 <Card.Title className="text-center mb-3"><h3>Steven Sarria</h3><br /><h6><i>Co-Host, Editor, Founder</i></h6></Card.Title>
@@ -35,8 +35,8 @@ const TeamPage = () => {
                 </div>
 
                 <div className="col-12 col-sm-6 mb-5 about-card">
-                    <CardDeck className="podcasts">
-                        <Card className='podcast-card'>
+                    <CardDeck className="team">
+                        <Card className='team-card'>
                             <Card.Img className='about-pics' width="100%" variant="top" src={John} />
                             <Card.Body className="">
                                 <Card.Title className="text-center mb-3"><h3>John Kegley</h3><br /><h6><i>Co-Host</i></h6></Card.Title>

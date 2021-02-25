@@ -86,10 +86,11 @@
   }
   
 .featured-jumbo {
-    width: 70%;
-    height: 70%;
-  }
+  display: block;
+  max-width: 100%;
+  height: auto;
+} 
 
 .home-jumbo {
-  width: 30rem;
+  width: 100%;
 }

@@ -10,14 +10,14 @@ import './homepage.css'
 const HomePage = () => {
     return (
         <div className="container">
-            <div className="row">
-                <div className="jumbotron col-12 home-jumbo pb-2 pt-5 mt-5 pr-5 d-flex align-items-center bg-medium">
-                    <div className="col-8 mb-5">
+            <div className="">
+                <div className="jumbotron home-jumbo mt-5 pt-5 d-flex flex-wrap bg-medium">
+                    <div className="col-12 col-lg-6">
                         <img className="featured-jumbo" src="https://variety.com/wp-content/uploads/2020/09/mm_still1.jpg" />
                     </div>
-                    <div className="col-4" >
-                        <h1 className="display-5 text-black mr-4 mb-4">WandaVision and More!</h1>
-                        <p className="lead text-black mr-4 mb-5">Steven and John discuss some of the films they've been watching this week before discussing some more WandaVision.<br /><a href='https://podcasts.apple.com/us/podcast/wandavision-judas-black-messiah-malcom-marie-more/id1460214563?i=1000509702676'>Listen on Apple Podcasts</a><br /><a href='https://open.spotify.com/episode/0xlT6igfbYvBTcoge1svRl?si=nApXV5mST9SKTVzwqFP14w'>Listen on Spotify</a></p>
+                    <div className="col-12 col-lg-6" >
+                        <h1 className="display-5 pt-5 text-black">WandaVision and More!</h1>
+                        <p className="lead text-black">Steven and John discuss some of the films they've been watching this week before discussing some more WandaVision.<br /><a href='https://podcasts.apple.com/us/podcast/wandavision-judas-black-messiah-malcom-marie-more/id1460214563?i=1000509702676'>Listen on Apple Podcasts</a><br /><a href='https://open.spotify.com/episode/0xlT6igfbYvBTcoge1svRl?si=nApXV5mST9SKTVzwqFP14w'>Listen on Spotify</a></p>
                     </div>
                 </div>
             </div>
@@ -32,9 +32,9 @@ const HomePage = () => {
                 <Card className='podcast-card'>
                     <Card.Img variant="top" src="https://variety.com/wp-content/uploads/2020/11/Judas-and-the-Black-Messiah.jpg?w=681&h=383&crop=1g" />
                     <Card.Body className="card-body">
-                        <Card.Title style={{ fontSize: "2rem" }}>Wandavision, Judas and Black Messiah & More!</Card.Title>
+                        <Card.Title style={{ fontSize: "2rem" }}>WandaVision, Judas and Black Messiah & More!</Card.Title>
                         <Card.Text className="podcast-text">
-                            Steven and John discuss episodes 5 & 6 of <i>Wandavision</i>, as well as some films they watched thiss week.
+                            Steven and John discuss episodes 5 & 6 of <i>WandaVision</i>, as well as some films they watched thiss week.
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>

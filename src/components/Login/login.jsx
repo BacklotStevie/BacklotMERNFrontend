@@ -29,8 +29,8 @@ const Login = () => {
             .then((res) => {
                 console.log(res)
                 setUser(res.data.user);
-                localStorage.setItem("user", res.data.user);
-                console.log(res.data.user)
+                localStorage.setItem("user", res.data.token);
+                console.log(res.data.token)
                 if (res.data.user.userType === "admin") {
                     history.push("/adminpage")
                 } else {

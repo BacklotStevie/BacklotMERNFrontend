@@ -34,7 +34,7 @@ const TeamPage = () => {
                     </CardDeck>
                 </div>
 
-                <div className="col-12 col-sm-6 mb-5 about-card">
+                <div className="col-12 col-sm-6 mb-5 pb-5 about-card">
                     <CardDeck className="team">
                         <Card className='team-card'>
                             <Card.Img className='about-pics' width="100%" variant="top" src={John} />

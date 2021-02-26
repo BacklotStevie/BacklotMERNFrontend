@@ -1,9 +1,9 @@
-.about-card {
+/* .about-card {
     height: 50rem;
-  }
+  } */
   
 .about-cards {
-    height: 98rem;
+    height: 70rem;
   }
   
 .socials-about {
@@ -25,5 +25,9 @@
 }
 
 .team-card {
-  height: 51rem;
+  height: 55rem;
 }
+
+
+
+

@@ -1,8 +1,6 @@
 import React from 'react';
-import { CardDeck } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 // import AddReview from '../../components/AddReview/addreview'
-import { Link } from 'react-router-dom'
 import './teampage.css'
 import John from '../../Images/john.jpg';
 import Steven from '../../Images/steven.jpg';

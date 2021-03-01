@@ -6,18 +6,16 @@ import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import ReviewsList from '../ReviewsTable/ReviewsTable.js';
+import { useHistory, useLocation } from 'react-router-dom'
 
 const AdminsOnly = () => {
+    const history = useHistory()
     const { user } = useContext(userContext)
 
-    if (user.userType === "normal") {
-        return (
-            <div className="container">
-                <div className="row text-center">
-                    <h1>You are not authorized to view this page.</h1>
-                </div>
-            </div>
-        )
+    console.log(user);
+
+    if (!user || user.userType === "normal") {
+        history.push('/');
     }
 
     return (

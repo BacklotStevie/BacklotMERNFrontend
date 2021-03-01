@@ -33,7 +33,7 @@ const Login = () => {
                 if (res.data.user.userType === "admin") {
                     history.push("/adminpage")
                 } else {
-                    history.push("/home");
+                    history.push("/");
                 }
             })
             .catch((error) => {

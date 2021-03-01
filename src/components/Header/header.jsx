@@ -15,7 +15,7 @@ const Header = () => {
 
     const logout = () => {
         setUser(null)
-        history.push("/home");
+        history.push("/");
     }
 
     const signin = () => {
@@ -25,7 +25,7 @@ const Header = () => {
         <>
             <Navbar id="backlot-nav" collapseOnSelect expand="md" bg="dark" variant="dark" className={(window.innerWidth >= 770 ? "mx-5 " : " ") + "mb-5"}>
                 <Navbar.Brand href="#home">
-                    <Link to="/home">
+                    <Link to="/">
                         <img className="header-logo" src={Logo} alt='logo' width="50" height="50" />
                     </Link>
                 </Navbar.Brand>

@@ -20,7 +20,7 @@ function App(props) {
   return (
     <div className="App">
       <Header />
-      <Route exact path="/home" render={(props) => <LandingPage {...props} />} />
+      <Route exact path="/" render={(props) => <LandingPage {...props} />} />
       <Route exact path="/reviews/:id" render={(props) => <IndividualReview {...props} />} />
       <Route exact path="/addReview" render={(props) => <AddReview  {...props} />} />
       <Route exact path="/reviews/editReview/:id" render={(props) => <EditReview  {...props} />} />

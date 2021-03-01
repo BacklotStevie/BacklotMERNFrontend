@@ -31,7 +31,7 @@ const Adduser = () => {
 
                 setUser(res?.data?.user);
                 localStorage.setItem("token", res.data.token);
-                history.push("/home")
+                history.push("/")
             })
             .catch((error) => {
                 console.log(error)

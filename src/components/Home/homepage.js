@@ -31,7 +31,7 @@ const HomePage = () => {
             <CardDeck className="podcasts pb-5">
                 <Card className='podcast-card'>
                     <Card.Img variant="top" src="https://variety.com/wp-content/uploads/2020/11/Judas-and-the-Black-Messiah.jpg?w=681&h=383&crop=1g" />
-                    <Card.Body className="card-body">
+                    <Card.Body className="podcast-body">
                         <Card.Title style={{ fontSize: "2rem" }}>WandaVision, Judas and Black Messiah & More!</Card.Title>
                         <Card.Text className="podcast-text">
                             Steven and John discuss episodes 5 & 6 of <i>WandaVision</i>, as well as some films they watched thiss week.
@@ -44,7 +44,7 @@ const HomePage = () => {
                 </Card>
                 <Card className='podcast-card'>
                     <Card.Img variant="top" src="https://www.denofgeek.com/wp-content/uploads/2021/01/wandavision-episode-4-mcu-marvel-easter-eggs.jpg?resize=768%2C432" />
-                    <Card.Body className="card-body">
+                    <Card.Body className="podcast-body">
                         <Card.Title style={{ fontSize: "2rem" }}>WandaVision Episodes 3 & 4 Theories, Rumors & Thoughts!</Card.Title>
                         <Card.Text className="podcast-text">
                             Steven and John discuss episodes 3 & 4 of <i>WandaVision.</i>
@@ -57,7 +57,7 @@ const HomePage = () => {
                 </Card>
                 <Card className='podcast-card'>
                     <Card.Img variant="top" src="https://www.rollingstone.com/wp-content/uploads/2020/12/RS-EndofYearLists_2020_MOVIES.jpg" />
-                    <Card.Body className="card-body">
+                    <Card.Body className="podcast-body">
                         <Card.Title style={{ fontSize: "2rem" }}>Top 10 Films of 2020</Card.Title>
                         <Card.Text className="podcast-text">
                             Steven and John discuss their top 10 films of 2020.

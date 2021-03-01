@@ -3,13 +3,14 @@ import { Link } from 'react-router-dom'
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import Logo from '../../Images/backlot-logo.png'
 import { useContext } from "react";
+import { useState } from "react";
 import { userContext } from '../../context/UserCtx'
 import { useHistory } from 'react-router-dom'
 import './header.css'
 
 const Header = () => {
-
     const { user, setUser } = useContext(userContext);
+
     const history = useHistory()
 
     const logout = () => {
@@ -22,7 +23,7 @@ const Header = () => {
 
     return (
         <>
-            <Navbar collapseOnSelect expand="md" bg="dark" variant="dark" className="mr-5 ml-5">
+            <Navbar id="backlot-nav" collapseOnSelect expand="md" bg="dark" variant="dark" className={(window.innerWidth >= 770 ? "mx-5 " : " ") + "mb-5"}>
                 <Navbar.Brand href="#home">
                     <Link to="/home">
                         <img className="header-logo" src={Logo} alt='logo' width="50" height="50" />

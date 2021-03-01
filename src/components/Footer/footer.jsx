@@ -42,7 +42,7 @@ const Footer = () => {
             <div className=" mission-footer col-12 col-md-4 mt-5 mb-5">
                 <h1>Contact Us</h1>
                 <div>
-                    <form className="contact-form" method="post" action="https://formspree.io/f/xgepjpor">
+                    <form className="contact-form" method="post" action="https://formspree.io/f/xeqpbpgr">
                         <div className="contact-firstname">
                             <label htmlFor="name"></label>
                             <input type="text" id="name" name="name" placeholder="Your name" required></input>

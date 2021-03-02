@@ -15,19 +15,19 @@ const BottomNav = () => {
       {/* <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i className="fa fa-facebook-f"></i></a> */}
 
   
-      <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i className="fa fa-twitter"></i></a>
+      <a className="btn btn-outline-light btn-floating m-1" href="https://twitter.com/InsideBacklot" role="button"><i className="fa fa-twitter"></i></a>
 
     
       {/* <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i className="fa fa-google"></i></a> */}
 
      
-      <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i className="fa fa-instagram"></i></a>
+      <a className="btn btn-outline-light btn-floating m-1" href="https://instagram.com/InsidetheBacklot" role="button"><i className="fa fa-instagram"></i></a>
 
       
-      <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i className="fa fa-linkedin"></i></a>
+      <a className="btn btn-outline-light btn-floating m-1" href="https://youtube.com/channel/UCjzTSGj_1r7K-W3kzZGYIdw" role="button"><i className="fa fa-youtube"></i></a>
 
       
-      <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i className="fa fa-github"></i></a>
+      <a className="btn btn-outline-light btn-floating m-1" href="https://github.com/BacklotStevie" role="button"><i className="fa fa-github"></i></a>
     </section>
    
     <section className="mb-4">

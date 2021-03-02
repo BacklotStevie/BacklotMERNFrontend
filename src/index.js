@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.css';
 import UserProvider from "./context/UserCtx";
+import 'font-awesome/css/font-awesome.min.css';
 
 //main thing that renders our application
 ReactDOM.render(

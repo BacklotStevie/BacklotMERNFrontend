@@ -1,6 +1,12 @@
 .footer{
     height: 100%;
+    overflow: hidden;
+    width: 100%;
   }
+
+.row {
+  margin: 0
+}
   
 .mission-footer {
     font-family: 'Cormorant Garamond', serif;
@@ -45,4 +51,5 @@
 .contact-email {
   padding-bottom: 10px;
 }
+
 

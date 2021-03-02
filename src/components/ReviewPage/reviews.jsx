@@ -19,7 +19,7 @@ const ReviewsList = (props) => {
     const ShowReviews = () => {
         return reviews && reviews.map((review, i, arr) => {
             return (
-                <div className="story col-12 col-sm-3 mb-4 mb-5">
+                <div className="story col-lg-3 col-sm-12 mb-5">
                     <div className="story-info card w-100 h-100">
                         <img className="card-img " src={review.img} alt="card" />
                         <div className="card-img-overlay">

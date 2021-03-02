@@ -14,7 +14,7 @@ import Signup from './pages/Signup/adduser';
 import LoginPage from './pages/LoginPage/LoginPage';
 import AdminPage from './pages/AdminPage/AdminPage';
 import EditReview from './components/EditReview/EditReview';
-import Footer from '../src/components/Footer/footer';
+import BottomNav from '../src/components/Footer/footer';
 
 function App(props) {
   return (
@@ -32,7 +32,7 @@ function App(props) {
       <Route exact path="/signup" render={(props) => <Signup {...props} />} />
       <Route exact path="/login" render={(props) => <LoginPage {...props} />} />
       <Route exact path="/adminpage" render={(props) => <AdminPage {...props} />} />
-      <Footer />
+      <BottomNav />
     </div>
   );
 }

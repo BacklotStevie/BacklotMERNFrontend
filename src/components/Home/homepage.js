@@ -13,11 +13,11 @@ const HomePage = () => {
             <div className="">
                 <div className="jumbotron home-jumbo mt-5 pt-5 d-flex flex-wrap bg-medium">
                     <div className="col-12 col-lg-6">
-                        <img className="featured-jumbo" src="https://variety.com/wp-content/uploads/2020/09/mm_still1.jpg" />
+                        <img className="featured-jumbo" src="https://cnet3.cbsistatic.com/img/gJmjeR-W6L38viJAB-fS45nJs3Y=/940x0/2021/02/26/893ade18-73a5-4575-b9c2-55df1af95ef1/sok0430-108-comp-v001-20210113-r709-83560aac.jpg" />
                     </div>
                     <div className="col-12 col-lg-6" >
-                        <h1 className="display-5 pt-5 text-black">WandaVision and More!</h1>
-                        <p className="lead text-black">Steven and John discuss some of the films they've been watching this week before discussing some more WandaVision.<br /><a href='https://podcasts.apple.com/us/podcast/wandavision-judas-black-messiah-malcom-marie-more/id1460214563?i=1000509702676'>Listen on Apple Podcasts</a><br /><a href='https://open.spotify.com/episode/0xlT6igfbYvBTcoge1svRl?si=nApXV5mST9SKTVzwqFP14w'>Listen on Spotify</a></p>
+                        <h1 className="display-5 pt-5 text-black">Golden Globes + WandaVision</h1>
+                        <p className="lead text-black">Steven and John discuss this weekend's Golden Globes and episodes 7 & 8 of <i>WandaVision</i>.<br /><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563#episodeGuid=insidethebacklot.podbean.com%2Fccb3c7db-ea3f-3ae8-92b3-48d9dc3eb799'>Listen on Apple Podcasts</a><br /><a href='https://open.spotify.com/episode/3vOHndpARiIbbe3w9Azoao?si=GlR2-Es9S5ybrvHMMLmlAQ'>Listen on Spotify</a></p>
                     </div>
                 </div>
             </div>
@@ -30,42 +30,42 @@ const HomePage = () => {
 
             <CardDeck className="podcasts pb-5">
                 <Card className='podcast-card'>
-                    <Card.Img variant="top" src="https://variety.com/wp-content/uploads/2020/11/Judas-and-the-Black-Messiah.jpg?w=681&h=383&crop=1g" />
+                    <Card.Img variant="top" src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/02/wandavision-episode-8-olsen-bettany-marvel-social-featured.png" />
                     <Card.Body className="podcast-body">
-                        <Card.Title style={{ fontSize: "2rem" }}>WandaVision, Judas and Black Messiah & More!</Card.Title>
+                        <Card.Title style={{ fontSize: "2rem" }}>Golden Globes + WandaVision</Card.Title>
                         <Card.Text className="podcast-text">
-                            Steven and John discuss episodes 5 & 6 of <i>WandaVision</i>, as well as some films they watched thiss week.
+                            Steven and John discuss this weekend's Golden Globes and episodes 7 & 8 of <i>WandaVision</i>
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <h6 className="text-center"><a href='https://open.spotify.com/episode/0xlT6igfbYvBTcoge1svRl?si=nApXV5mST9SKTVzwqFP14w'>Listen On Spotify</a></h6>
-                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/wandavision-judas-black-messiah-malcom-marie-more/id1460214563?i=1000509702676'>Listen On Apple Podcasts</a></h6>
+                        <h6 className="text-center"><a href='https://open.spotify.com/episode/3vOHndpARiIbbe3w9Azoao?si=GlR2-Es9S5ybrvHMMLmlAQ'>Listen On Spotify</a></h6>
+                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563#episodeGuid=insidethebacklot.podbean.com%2Fccb3c7db-ea3f-3ae8-92b3-48d9dc3eb799'>Listen On Apple Podcasts</a></h6>
                     </Card.Footer>
                 </Card>
                 <Card className='podcast-card'>
-                    <Card.Img variant="top" src="https://www.denofgeek.com/wp-content/uploads/2021/01/wandavision-episode-4-mcu-marvel-easter-eggs.jpg?resize=768%2C432" />
+                    <Card.Img variant="top" src="https://variety.com/wp-content/uploads/2020/11/Judas-and-the-Black-Messiah.jpg?w=681&h=383&crop=1g" />
                     <Card.Body className="podcast-body">
-                        <Card.Title style={{ fontSize: "2rem" }}>WandaVision Episodes 3 & 4 Theories, Rumors & Thoughts!</Card.Title>
+                        <Card.Title style={{ fontSize: "2rem" }}>WandaVision, Judas and Black Messiah & More</Card.Title>
+                        <Card.Text className="podcast-text">
+                            Steven and John discuss episodes 5 & 6 of <i>WandaVision</i>, as well as some other films they watched that week.
+                        </Card.Text>
+                    </Card.Body>
+                    <Card.Footer>
+                        <h6 className="text-center"><a href='https://open.spotify.com/episode/0xlT6igfbYvBTcoge1svRl?si=HJv7CnhZQBmKdn_UObwQXQ'>Listen On Spotify</a></h6>
+                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563?i=1000509702676'>Listen On Apple Podcasts</a></h6>
+                    </Card.Footer>
+                </Card>
+                <Card className='podcast-card'>
+                    <Card.Img variant="top" src="https://terrigen-cdn-dev.marvel.com/content/prod/1x/dvi1240_104_comp_v022_r709.127613_0.jpg" />
+                    <Card.Body className="podcast-body">
+                        <Card.Title style={{ fontSize: "2rem" }}>WandaVision Eps. 3 & 4</Card.Title>
                         <Card.Text className="podcast-text">
                             Steven and John discuss episodes 3 & 4 of <i>WandaVision.</i>
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>
-                        <h6 className="text-center"><a href='https://open.spotify.com/episode/23sqyOrPx9pCeMRLsGF6La?si=s4hQptxbTr2Tg9X4NrqQiw'>Listen On Spotify</a></h6>
-                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/wandavision-ep-3-4-discussion-theories-rumors-thoughts/id1460214563?i=1000507636894'>Listen On Apple Podcasts</a></h6>
-                    </Card.Footer>
-                </Card>
-                <Card className='podcast-card'>
-                    <Card.Img variant="top" src="https://www.rollingstone.com/wp-content/uploads/2020/12/RS-EndofYearLists_2020_MOVIES.jpg" />
-                    <Card.Body className="podcast-body">
-                        <Card.Title style={{ fontSize: "2rem" }}>Top 10 Films of 2020</Card.Title>
-                        <Card.Text className="podcast-text">
-                            Steven and John discuss their top 10 films of 2020.
-                        </Card.Text>
-                    </Card.Body>
-                    <Card.Footer>
-                        <h6 className="text-center"><a href='https://open.spotify.com/episode/57F8QBetc1z6fYKd6eRVkE?si=6fqKAdp7TmKWwQkFshkVqQ'>Listen On Spotify</a></h6>
-                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/backlots-top-10-films-of-2020/id1460214563?i=1000506784326'>Listen On Apple Podcasts</a></h6>
+                        <h6 className="text-center"><a href='https://open.spotify.com/episode/23sqyOrPx9pCeMRLsGF6La?si=MFkJ8lXrQ8WsCBzp_3Qmow'>Listen On Spotify</a></h6>
+                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563?i=1000507636894'>Listen On Apple Podcasts</a></h6>
                     </Card.Footer>
                 </Card>
             </CardDeck>

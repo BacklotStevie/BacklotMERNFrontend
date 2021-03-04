@@ -17,7 +17,7 @@ const HomePage = () => {
                     </div>
                     <div className="col-12 col-lg-6" >
                         <h1 className="display-5 pt-5 text-black">Golden Globes + WandaVision</h1>
-                        <p className="lead text-black">Steven and John discuss this weekend's Golden Globes and episodes 7 & 8 of <i>WandaVision</i>.<br /><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563#episodeGuid=insidethebacklot.podbean.com%2Fccb3c7db-ea3f-3ae8-92b3-48d9dc3eb799'>Listen on Apple Podcasts</a><br /><a href='https://open.spotify.com/episode/3vOHndpARiIbbe3w9Azoao?si=GlR2-Es9S5ybrvHMMLmlAQ'>Listen on Spotify</a></p>
+                        <p className="lead text-black">Steven and John discuss this weekend's Golden Globes and episodes 7 & 8 of <i>WandaVision</i>.<br /><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563?i=1000511378732'>Listen on Apple Podcasts</a><br /><a href='https://open.spotify.com/episode/3vOHndpARiIbbe3w9Azoao?si=GlR2-Es9S5ybrvHMMLmlAQ'>Listen on Spotify</a></p>
                     </div>
                 </div>
             </div>
@@ -39,7 +39,7 @@ const HomePage = () => {
                     </Card.Body>
                     <Card.Footer>
                         <h6 className="text-center"><a href='https://open.spotify.com/episode/3vOHndpARiIbbe3w9Azoao?si=GlR2-Es9S5ybrvHMMLmlAQ'>Listen On Spotify</a></h6>
-                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563#episodeGuid=insidethebacklot.podbean.com%2Fccb3c7db-ea3f-3ae8-92b3-48d9dc3eb799'>Listen On Apple Podcasts</a></h6>
+                        <h6 className="text-center"><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563?i=1000511378732'>Listen On Apple Podcasts</a></h6>
                     </Card.Footer>
                 </Card>
                 <Card className='podcast-card'>

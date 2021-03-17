@@ -58,7 +58,7 @@ const HomePage = () => {
                 <Card className='podcast-card'>
                     <Card.Img variant="top" src="https://variety.com/wp-content/uploads/2020/11/Judas-and-the-Black-Messiah.jpg?w=681&h=383&crop=1g" />
                     <Card.Body className="podcast-body">
-                        <Card.Title style={{ fontSize: "2rem" }}>WandaVision, Judas and Black Messiah & More</Card.Title>
+                        <Card.Title style={{ fontSize: "2rem" }}>WandaVision, Judas and the Black Messiah & More</Card.Title>
                         <Card.Text className="podcast-text">
                             Steven and John discuss episodes 5 & 6 of <i>WandaVision</i>, as well as some other films they watched that week.
                         </Card.Text>

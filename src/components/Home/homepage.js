@@ -32,7 +32,7 @@ const HomePage = () => {
                 <Card className='podcast-card'>
                     <Card.Img variant="top" src="https://www.denofgeek.com/wp-content/uploads/2021/03/Invincible-Amazon-Review.jpg?fit=1920%2C1080" />
                     <Card.Body className="podcast-body">
-                        <Card.Title style={{ fontSize: "2rem" }}>We Need to Talk About Invincible</Card.Title>
+                        <Card.Title style={{ fontSize: "2rem" }}>We Need To Talk About Invincible</Card.Title>
                         <Card.Text className="podcast-text">
                             Steven, JP & John discuss Amazon Prime's <i>Invincble</i>.
                         </Card.Text>
@@ -47,7 +47,7 @@ const HomePage = () => {
                     <Card.Body className="podcast-body">
                         <Card.Title style={{ fontSize: "2rem" }}>Mortal Kombat</Card.Title>
                         <Card.Text className="podcast-text">
-                            Steven, JP & John pontificate about this year's indie gem, <i>Mortal Kombat.</i>
+                            Steven, JP & John discuss this year's indie gem, <i>Mortal Kombat.</i>
                         </Card.Text>
                     </Card.Body>
                     <Card.Footer>

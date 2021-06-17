@@ -46,7 +46,7 @@ const TeamPage = () => {
                                 </h6>
                             </Card.Title>
                             <Card.Text className="podcast-text">
-                                The founder of Inside the Backlot, the company started as a passion project of Steven's. An aspiring filmmaker and film lover, Steven took an interest in the art form at an early age, and the passion has grown since. With a penchant for not shutting up, Inside the Backlot serves as an outlet for him - and others to come together and share discussion in something they love. When not recording the podcast, you can catch Steven convincing his friends to watch <i>Black Sails</i> or re-watching <i>Sherlock</i> for the 16th time. 
+                                Producer, podcast host, 
                             </Card.Text>
                             <div className='text-center mt-3'>
                                 <a href="https://twitter.com/sarria_steven?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="https://assets.stickpng.com/thumbs/580b57fcd9996e24bc43c53e.png" className="social-icons-team"></img></a>

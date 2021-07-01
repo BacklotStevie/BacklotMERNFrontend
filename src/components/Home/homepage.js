@@ -17,7 +17,7 @@ const HomePage = () => {
                     </div>
                     <div className="col-12 col-lg-6" >
                         <h1 className="display-5 pt-5 text-black">Loki: Mid-Season Review</h1>
-                        <p className="lead text-black">Steven reviews the first half of Marvel's newest series, <i>Loki</i><br /><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563?i=1000521517803'>Listen on Apple Podcasts</a><br /><a href='https://open.spotify.com/episode/16x53tGDRgC5wJGUnMKvif?si=c126d3c982e4484b'>Listen on Spotify</a></p>
+                        <p className="lead text-black">Steven reviews the first half of Marvel's newest series, <i>Loki.</i><br /><a href='https://podcasts.apple.com/us/podcast/inside-the-backlot/id1460214563?i=1000521517803'>Listen on Apple Podcasts</a><br /><a href='https://open.spotify.com/episode/16x53tGDRgC5wJGUnMKvif?si=c126d3c982e4484b'>Listen on Spotify</a></p>
                     </div>
                 </div>
             </div>
